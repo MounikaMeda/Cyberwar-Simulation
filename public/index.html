@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cybersecurity Minimax Simulation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>⚡ Cyber Attack/Defense Minimax Simulation</h1>
+        
+        <div id="turn-indicator" class="attacker-turn">Current Turn: Attacker</div>
+        
+        <div class="resource-display">
+            <div id="attacker-resources" class="resource attacker">
+                <h3>Attacker Resources: --</h3>
+            </div>
+            
+            <div id="status" class="security-status">
+                <h2>Network Security Dashboard</h2>
+                <div class="security-meter">
+                    <div id="security-bar" class="bar"></div>
+                </div>
+                <p>Security Level: --/10</p>
+            </div>
+            
+            <div id="defender-resources" class="resource defender">
+                <h3>Defender Resources: --</h3>
+            </div>
+        </div>
+
+        <div class="game-panel">
+            <div class="controls">
+                <h3>Attacker Actions</h3>
+                <div id="attack-buttons" class="attack-buttons">
+                    <!-- Buttons will be added by JavaScript -->
+                </div>
+
+                <h3>Defender Actions</h3>
+                <button id="defend-btn" class="defend-button">
+                    🚨 Run AI Defense (Minimax)
+                </button>
+                
+                <button id="restart-btn" class="restart-button">
+                    🔄 Restart Game
+                </button>
+            </div>
+
+            <div class="log-container">
+                <h3>Attack/Defense Log</h3>
+                <div id="game-log" class="log">
+                    <!-- Log entries will appear here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

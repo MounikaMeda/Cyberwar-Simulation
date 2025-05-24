@@ -1,0 +1,7 @@
+{
+  "attacks": [
+    { "name": "Phishing", "success_rate": 0.7, "detection_chance": 0.5 },
+    { "name": "DDoS", "success_rate": 0.6, "detection_chance": 0.8 },
+    { "name": "Zero-Day", "success_rate": 0.9, "detection_chance": 0.2 }
+  ]
+}
