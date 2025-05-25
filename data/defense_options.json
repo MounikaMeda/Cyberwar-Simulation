@@ -1,0 +1,57 @@
+[
+    {
+        "id": 1,
+        "name": "Web Application Firewall",
+        "type": "defense",
+        "category": "network",
+        "security_boost": 12,
+        "cost": 15,
+        "effectiveness": 0.9,
+        "effective_against": ["injection", "client-side", "execution"],
+        "cooldown": 2
+    },
+    {
+        "id": 2,
+        "name": "Intrusion Detection System",
+        "type": "defense",
+        "category": "monitoring",
+        "security_boost": 8,
+        "cost": 10,
+        "effectiveness": 0.8,
+        "effective_against": ["execution", "access", "availability"],
+        "cooldown": 1
+    },
+    {
+        "id": 3,
+        "name": "Patch Management",
+        "type": "defense",
+        "category": "maintenance",
+        "security_boost": 6,
+        "cost": 8,
+        "effectiveness": 0.7,
+        "effective_against": ["injection", "client-side"],
+        "cooldown": 0
+    },
+    {
+        "id": 4,
+        "name": "Behavioral Analytics",
+        "type": "defense",
+        "category": "monitoring",
+        "security_boost": 10,
+        "cost": 12,
+        "effectiveness": 0.85,
+        "effective_against": ["access", "execution"],
+        "cooldown": 3
+    },
+    {
+        "id": 5,
+        "name": "Rate Limiting",
+        "type": "defense",
+        "category": "network",
+        "security_boost": 5,
+        "cost": 6,
+        "effectiveness": 0.6,
+        "effective_against": ["availability"],
+        "cooldown": 0
+    }
+]

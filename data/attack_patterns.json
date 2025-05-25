@@ -1,7 +1,52 @@
-{
-  "attacks": [
-    { "name": "Phishing", "success_rate": 0.7, "detection_chance": 0.5 },
-    { "name": "DDoS", "success_rate": 0.6, "detection_chance": 0.8 },
-    { "name": "Zero-Day", "success_rate": 0.9, "detection_chance": 0.2 }
-  ]
-}
+[
+    {
+        "id": 1,
+        "name": "Phishing Campaign",
+        "type": "social",
+        "damage": 10,
+        "cost": 8,
+        "effectiveness": 0.75,
+        "detection_chance": 0.4,
+        "duration": 1
+    },
+    {
+        "id": 2,
+        "name": "Advanced Persistent Threat",
+        "type": "targeted",
+        "damage": 18,
+        "cost": 20,
+        "effectiveness": 0.9,
+        "detection_chance": 0.2,
+        "duration": 3
+    },
+    {
+        "id": 3,
+        "name": "Zero-Day Exploit",
+        "type": "exploit",
+        "damage": 25,
+        "cost": 25,
+        "effectiveness": 0.95,
+        "detection_chance": 0.1,
+        "duration": 1
+    },
+    {
+        "id": 4,
+        "name": "Credential Stuffing",
+        "type": "automated",
+        "damage": 8,
+        "cost": 5,
+        "effectiveness": 0.65,
+        "detection_chance": 0.7,
+        "duration": 1
+    },
+    {
+        "id": 5,
+        "name": "Supply Chain Attack",
+        "type": "indirect",
+        "damage": 15,
+        "cost": 15,
+        "effectiveness": 0.8,
+        "detection_chance": 0.3,
+        "duration": 2
+    }
+]

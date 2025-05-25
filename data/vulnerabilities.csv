@@ -1,5 +1,0 @@
-id,name,severity,exploit_chance,defense_cost
-1,SQL Injection,High,0.8,3
-2,XSS,Medium,0.6,2
-3,Brute Force,Low,0.4,1
-4,RCE,Critical,0.9,4

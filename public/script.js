@@ -81,29 +81,38 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // Auto-defend when it's defender's turn
-  async function autoDefend() {
+  // ... (previous code remains the same until the autoDefend function)
+
+async function autoDefend() {
     try {
-      const response = await fetch('/defend', {
-        method: 'POST'
-      });
-      
-      if (!response.ok) {
-        const error = await response.json();
-        throw new Error(error.error);
-      }
-      
-      const data = await response.json();
-      gameState = data.gameState;
-      addLog(`Defended with ${data.defense.type} (+${data.defense.security_boost} security)`);
-      updateUI();
-      
-      if (gameState.gameOver) {
-        endGame();
-      }
+        const response = await fetch('/defend', {
+            method: 'POST'
+        });
+        
+        if (!response.ok) {
+            const error = await response.json();
+            throw new Error(error.error);
+        }
+        
+        const data = await response.json();
+        gameState = data.gameState;
+        
+        // Display detailed defense information
+        const defense = data.defense;
+        addLog(defense.message);
+        addLog(`Defense effectiveness: ${(defense.effectiveness * 100).toFixed(0)}% | Cost: ${defense.cost} resources`);
+        
+        updateUI();
+        
+        if (gameState.gameOver) {
+            endGame();
+        }
     } catch (error) {
-      addLog(error.message, true);
+        addLog(error.message, true);
     }
-  }
+}
+
+// ... (rest of the code remains the same)
 
   // Update UI
   function updateUI() {

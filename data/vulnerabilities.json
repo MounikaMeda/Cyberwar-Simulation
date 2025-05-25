@@ -1,0 +1,52 @@
+[
+    {
+        "id": 1,
+        "name": "SQL Injection",
+        "type": "injection",
+        "severity": "critical",
+        "damage": 15,
+        "cost": 12,
+        "effectiveness": 0.85,
+        "detection_chance": 0.7
+    },
+    {
+        "id": 2,
+        "name": "Cross-Site Scripting (XSS)",
+        "type": "client-side",
+        "severity": "high",
+        "damage": 10,
+        "cost": 8,
+        "effectiveness": 0.75,
+        "detection_chance": 0.6
+    },
+    {
+        "id": 3,
+        "name": "Remote Code Execution",
+        "type": "execution",
+        "severity": "critical",
+        "damage": 20,
+        "cost": 18,
+        "effectiveness": 0.9,
+        "detection_chance": 0.5
+    },
+    {
+        "id": 4,
+        "name": "Privilege Escalation",
+        "type": "access",
+        "severity": "high",
+        "damage": 12,
+        "cost": 10,
+        "effectiveness": 0.8,
+        "detection_chance": 0.65
+    },
+    {
+        "id": 5,
+        "name": "DDoS Attack",
+        "type": "availability",
+        "severity": "medium",
+        "damage": 8,
+        "cost": 6,
+        "effectiveness": 0.7,
+        "detection_chance": 0.9
+    }
+]
